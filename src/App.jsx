@@ -1,9 +1,12 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="bg-[#F4F5FA]">
       <div>
         <div className="w-72 fixed bg-white h-full">
@@ -15,7 +18,13 @@ function App() {
           </div>
         </div>
       </div>
+      <div>
+        <Routes>
+          <Route path="/"/>
+        </Routes>
+      </div>
     </div>
+    </BrowserRouter>
   );
 }
 
