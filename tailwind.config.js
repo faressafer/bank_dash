@@ -1,15 +1,19 @@
 module.exports = {
-  content: [
-    './index.html',
-    './src/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      colors:{
-        'main-bg': '#F5F7FA',
-        'secondary-bg': 'FFFFFF'
-      }
+      fontFamily: {
+        lato: ["Lato", "sans-serif"],
+      },
+      colors: {
+        "main-bg": "#F5F7FA",
+        "secondary-bg": "FFFFFF",
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [
+    require("flowbite/plugin")({
+      charts: true,
+    }),
+  ],
+};
