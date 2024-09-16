@@ -13,22 +13,22 @@ import { Link, NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="border w-full h-full p-4">
+    <div className="  w-full h-full p-4">
       {/* Logo */}
-      <div className="border p-4 pl-4 pt-3 pb-2.5 m-2">
+      <div className="  p-4 pl-4 pt-3 pb-2.5 m-2">
         <Link to="/">
           <img src={logo} alt="logo" />
         </Link>
       </div>
       {/* Menu Items */}
-      <div className="mt-10 space-between border">
+      <div className="mt-10 space-between  ">
         {/* Dashboard */}
         <NavLink
           to="/dashboard"
           className={({ isActive }) =>
             isActive
-              ? "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 bg-blue-100 text-blue-600 border rounded-md"
-              : "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 border rounded-md"
+              ? "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 bg-blue-100 text-blue-600   rounded-md"
+              : "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2   rounded-md"
           }
         >
           <img src={home} alt="home-icon" />
@@ -40,8 +40,8 @@ const Sidebar = () => {
           to="/transactions"
           className={({ isActive }) =>
             isActive
-              ? "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 bg-blue-100 text-blue-600 border rounded-md"
-              : "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 border rounded-md"
+              ? "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 bg-blue-100 text-blue-600   rounded-md"
+              : "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2   rounded-md"
           }
         >
           <img src={transfer} alt="transfer" />
@@ -53,8 +53,8 @@ const Sidebar = () => {
           to="/accounts"
           className={({ isActive }) =>
             isActive
-              ? "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 bg-blue-100 text-blue-600 border rounded-md"
-              : "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 border rounded-md"
+              ? "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 bg-blue-100 text-blue-600   rounded-md"
+              : "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2   rounded-md"
           }
         >
           <img src={user} alt="user" />
@@ -66,8 +66,8 @@ const Sidebar = () => {
           to="/investments"
           className={({ isActive }) =>
             isActive
-              ? "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 bg-blue-100 text-blue-600 border rounded-md"
-              : "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 border rounded-md"
+              ? "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 bg-blue-100 text-blue-600   rounded-md"
+              : "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2   rounded-md"
           }
         >
           <img src={economicinvestment} alt="economic investment" />
@@ -79,8 +79,8 @@ const Sidebar = () => {
           to="/credit-cards"
           className={({ isActive }) =>
             isActive
-              ? "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 bg-blue-100 text-blue-600 border rounded-md"
-              : "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 border rounded-md"
+              ? "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 bg-blue-100 text-blue-600   rounded-md"
+              : "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2   rounded-md"
           }
         >
           <img src={creditcard} alt="credit card" />
@@ -92,8 +92,8 @@ const Sidebar = () => {
           to="/loans"
           className={({ isActive }) =>
             isActive
-              ? "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 bg-blue-100 text-blue-600 border rounded-md"
-              : "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 border rounded-md"
+              ? "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 bg-blue-100 text-blue-600   rounded-md"
+              : "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2   rounded-md"
           }
         >
           <img src={loan} alt="loan" />
@@ -105,8 +105,8 @@ const Sidebar = () => {
           to="/services"
           className={({ isActive }) =>
             isActive
-              ? "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 bg-blue-100 text-blue-600 border rounded-md"
-              : "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 border rounded-md"
+              ? "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 bg-blue-100 text-blue-600   rounded-md"
+              : "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2   rounded-md"
           }
         >
           <img src={service} alt="service" />
@@ -118,8 +118,8 @@ const Sidebar = () => {
           to="/privileges"
           className={({ isActive }) =>
             isActive
-              ? "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 bg-blue-100 text-blue-600 border rounded-md"
-              : "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 border rounded-md"
+              ? "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 bg-blue-100 text-blue-600   rounded-md"
+              : "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2   rounded-md"
           }
         >
           <img src={econometrics} alt="privileges" />
@@ -131,8 +131,8 @@ const Sidebar = () => {
           to="/settings"
           className={({ isActive }) =>
             isActive
-              ? "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 bg-blue-100 text-blue-600 border rounded-md"
-              : "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 border rounded-md"
+              ? "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2 bg-blue-100 text-blue-600   rounded-md"
+              : "flex items-center gap-4 pl-4 pt-3 pb-2.5 m-2   rounded-md"
           }
         >
           <img src={settings} alt="settings" />
